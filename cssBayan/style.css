@@ -58,6 +58,10 @@ h2 {
   display: none;
 }
 
+.label:hover .title-button {
+  transform: rotate(45deg);
+}
+
  .meme-title:hover {
   background-color: silver;
  }
