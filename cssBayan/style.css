@@ -25,6 +25,10 @@ h2 {
   display: none;
 }
 
+.menu-container {
+  width: 40%;
+}
+
 .meme-title {
   border-radius: 10px;
   background-color: lightgrey;
@@ -33,12 +37,46 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding: 0px 20px 0px; 
+  margin: 3px;
+  cursor: pointer;
 }
+
+.title-button {
+  width: 15px;
+  height: 15px;
+  background-image: url('./svg/menu-icon.svg');
+  background-size: cover;
+  display: none;
+}
+
+.menu-container:hover .title-button {
+  display: block;
+} 
 
 .meme-button {
   appearance: none;
+  display: none;
 }
 
-.meme-button:checked + .meme-container{
+ .meme-title:hover {
+  background-color: silver;
+ }
+
+.meme-button:checked + .meme-container {
+  display: flex;
+  justify-content: center;
+}
+
+.meme-button:checked + .title-button {
   display: block;
+  background-color: red;
+}
+  
+/* .meme-title:hover + .meme-container {
+  display: block;
+} */
+
+
+.image {
+  border-radius: 10px;
 }
