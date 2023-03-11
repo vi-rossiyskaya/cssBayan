@@ -8,10 +8,6 @@ h1, h2 {
  padding: 0;
 }
 
-h2 {
-  background-color: silver;
-}
-
 .main {
   max-width: 1920px;
   width: 100%;
@@ -22,7 +18,10 @@ h2 {
 }
 
 .meme-container {
-  display: none;
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+  height: 0px;
 }
 
 .menu-container {
@@ -30,6 +29,7 @@ h2 {
 }
 
 .meme-title {
+  color: #454545;
   border-radius: 10px;
   background-color: lightgrey;
   height: 30px;
@@ -47,6 +47,7 @@ h2 {
   height: 15px;
   background-image: url('./svg/menu-icon.svg');
   background-size: cover;
+  transition: 0.5s;
   display: none;
 }
 
@@ -64,26 +65,24 @@ h2 {
 }
 
 .label:hover .meme-container {
-  display: flex;
-  justify-content: center;
+  height: 50vh;
 }
 
  .meme-title:hover {
   background-color: silver;
+  color: #000000;
  }
 
 .meme-button:checked ~ .meme-container {
-  display: flex;
-  justify-content: center;
+  height: 50vh;
 }
 
 .meme-button:checked ~ .meme-title .title-button {
   transform: rotate(45deg);
 }
-  
-/* .meme-title:hover + .meme-container {
-  display: block;
-} */
+.meme-button:checked ~ .meme-title {
+  color: #000000;
+}
 
 
 .image {
