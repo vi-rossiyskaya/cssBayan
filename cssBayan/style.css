@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 body {
   height: viewport;
   width: 100%;
+  font-family: 'Shadows Into Light', cursive;
+
 }
 
 h1, h2 {
@@ -101,7 +105,7 @@ h1, h2 {
   }
 
   .meme-title {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -115,7 +119,7 @@ h1, h2 {
   }
 
   .meme-title {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
