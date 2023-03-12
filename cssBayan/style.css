@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+body {
+  height: viewport;
+  width: 100%;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+h1, h2 {
+ margin: 0;
+ padding: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 3rem;
+}
+
+.meme-container {
+  display: flex;
+  justify-content: center;
+  transition: 1s;
+  margin: 1vh;
+  height: 0;
+}
+
+.menu-container {
+  width: 100%;
+}
+
+.meme-title {
+  color: #454545;
+  border-radius: 5vh;
+  background-color: lightgrey;
+  height: 5vh;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3vh 0;
+  margin: 0.2vh;
+}
+
+.meme-title:active:hover {
+  box-shadow: -2px 2px 4px 0px rgba(117,126,130,1);
+}
+
+.title-button {
+  width: 1rem;
+  height: 1rem;
+  background-image: url('./icon/menu-icon.svg');
+  background-size: cover;
+  transition: 0.5s;
+  display: block;
+  opacity: 0;
+}
+
+.menu-container:hover .title-button {
+  opacity: 1;
+} 
+
+.meme-button {
+  appearance: none;
+  display: none;
+}
+
+.label:hover .title-button, .meme-button:checked ~ .meme-title .title-button {
+  transform: rotate(45deg);
+}
+
+.label:hover .meme-container, .meme-button:checked ~ .meme-container {
+  height: 50vh;
+}
+
+.meme-title:hover {
+  background-color: silver;
+  color: #000000;
+}
+
+.meme-button:checked ~ .meme-title {
+  color: #000000;
+}
+
+.image {
+  border-radius: 1vh;
+}
+
+@media screen and (min-width: 720px){
+  .menu-container {
+    width: 80%;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .meme-title {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .menu-container {
+    width: 50%;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .meme-title {
+    font-size: 0.8rem;
+  }
+}
+
+@media (hover: hover) {
+  .label, .meme-container {
+    cursor: pointer;
+  }
+}
