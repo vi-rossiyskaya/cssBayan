@@ -25,6 +25,7 @@ h1, h2 {
   display: flex;
   justify-content: center;
   transition: 1s;
+  margin: 1vh;
   height: 0;
 }
 
@@ -44,6 +45,10 @@ h1, h2 {
   align-items: center;
   padding: 0 3vh 0;
   margin: 0.2vh;
+}
+
+.meme-title:active:hover {
+  box-shadow: -2px 2px 4px 0px rgba(117,126,130,1);
 }
 
 .title-button {
