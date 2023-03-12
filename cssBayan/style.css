@@ -48,11 +48,12 @@ h1, h2 {
   background-image: url('./svg/menu-icon.svg');
   background-size: cover;
   transition: 0.5s;
-  display: none;
+  display: block;
+  opacity: 0;
 }
 
 .menu-container:hover .title-button {
-  display: block;
+  opacity: 1;
 } 
 
 .meme-button {
