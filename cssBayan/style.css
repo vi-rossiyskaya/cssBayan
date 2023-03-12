@@ -4,7 +4,6 @@ body {
   height: viewport;
   width: 100%;
   font-family: 'Shadows Into Light', cursive;
-
 }
 
 h1, h2 {
@@ -66,30 +65,22 @@ h1, h2 {
   display: none;
 }
 
-.label:hover .title-button {
+.label:hover .title-button, .meme-button:checked ~ .meme-title .title-button {
   transform: rotate(45deg);
 }
 
-.label:hover .meme-container {
+.label:hover .meme-container, .meme-button:checked ~ .meme-container {
   height: 50vh;
 }
 
- .meme-title:hover {
+.meme-title:hover {
   background-color: silver;
   color: #000000;
- }
-
-.meme-button:checked ~ .meme-container {
-  height: 50vh;
 }
 
-.meme-button:checked ~ .meme-title .title-button {
-  transform: rotate(45deg);
-}
 .meme-button:checked ~ .meme-title {
   color: #000000;
 }
-
 
 .image {
   border-radius: 1vh;
